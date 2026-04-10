@@ -2,9 +2,9 @@
 
 namespace codearachnid\AwsSesObserver\Tests;
 
+use codearachnid\AwsSesObserver\AwsSesObserverServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use codearachnid\AwsSesObserver\AwsSesObserverServiceProvider;
 
 class TestCase extends Orchestra
 {

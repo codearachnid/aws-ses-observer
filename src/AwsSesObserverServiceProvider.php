@@ -2,9 +2,9 @@
 
 namespace codearachnid\AwsSesObserver;
 
+use codearachnid\AwsSesObserver\Commands\AwsSesObserverCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use codearachnid\AwsSesObserver\Commands\AwsSesObserverCommand;
 
 class AwsSesObserverServiceProvider extends PackageServiceProvider
 {
