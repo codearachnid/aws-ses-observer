@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace codearachnid\AwsSesObserver\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class AwsSesObserverCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'aws-ses-observer';
 
     public $description = 'My command';
 

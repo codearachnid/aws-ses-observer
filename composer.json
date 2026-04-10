@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "codearachnid/aws-ses-observer",
+    "description": "Open-source email observability for AWS SES. Track deliveries, bounces, opens, clicks, and complaints in a self-hosted Laravel dashboard you own.",
     "keywords": [
-        ":vendor_name",
+        "Timothy Wood",
         "laravel",
-        ":package_slug"
+        "aws-ses-observer"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/codearachnid/aws-ses-observer",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Timothy Wood",
+            "email": "codearachnid@gmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "codearachnid\\AwsSesObserver\\": "src/",
+            "codearachnid\\AwsSesObserver\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "codearachnid\\AwsSesObserver\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "codearachnid\\AwsSesObserver\\AwsSesObserverServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "AwsSesObserver": "codearachnid\\AwsSesObserver\\Facades\\AwsSesObserver"
             }
         }
     },
