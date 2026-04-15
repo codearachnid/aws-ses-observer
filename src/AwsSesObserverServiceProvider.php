@@ -19,4 +19,12 @@ class AwsSesObserverServiceProvider extends PackageServiceProvider
             ->hasAssets()
             ->hasRoute('web');
     }
+
+    public function packageBooted(): void
+    {
+        $this->app['router']->aliasMiddleware(
+            'ses-observer.auth',
+            Http\Middleware\OptionalBasicAuth::class,
+        );
+    }
 }
