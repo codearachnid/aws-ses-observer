@@ -5,7 +5,12 @@ arch('it will not use debugging functions')
     ->each->not->toBeUsed();
 
 arch('models extend Eloquent Model')
-    ->expect('codearachnid\AwsSesObserver\Models')
+    ->expect([
+        'codearachnid\AwsSesObserver\Models\Source',
+        'codearachnid\AwsSesObserver\Models\Webhook',
+        'codearachnid\AwsSesObserver\Models\Message',
+        'codearachnid\AwsSesObserver\Models\Event',
+    ])
     ->toExtend('Illuminate\Database\Eloquent\Model');
 
 arch('enums are string-backed')
