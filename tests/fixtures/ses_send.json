@@ -1,0 +1,25 @@
+{
+    "eventType": "Send",
+    "mail": {
+        "timestamp": "2024-01-15T12:00:00.000Z",
+        "source": "sender@example.com",
+        "sourceArn": "arn:aws:ses:us-east-1:123456789012:identity/example.com",
+        "sendingAccountId": "123456789012",
+        "messageId": "EXAMPLE7c191be45-e9aedb9a-02f9-4d12-a87d-dd0099a07f8a-000000",
+        "destination": [
+            "recipient@example.com"
+        ],
+        "headersTruncated": false,
+        "commonHeaders": {
+            "from": ["sender@example.com"],
+            "to": ["recipient@example.com"],
+            "subject": "Test Email Subject"
+        },
+        "tags": {
+            "ses:configuration-set": ["production-observer"],
+            "ses:source-ip": ["192.0.2.0"],
+            "app:campaign": ["welcome-series"]
+        }
+    },
+    "send": {}
+}

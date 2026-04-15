@@ -1,0 +1,24 @@
+{
+    "eventType": "Open",
+    "mail": {
+        "timestamp": "2024-01-15T12:00:00.000Z",
+        "source": "sender@example.com",
+        "sourceArn": "arn:aws:ses:us-east-1:123456789012:identity/example.com",
+        "sendingAccountId": "123456789012",
+        "messageId": "EXAMPLE7c191be45-open-4d12-a87d-dd0099a07f8a-000000",
+        "destination": [
+            "reader@example.com"
+        ],
+        "headersTruncated": false,
+        "commonHeaders": {
+            "from": ["sender@example.com"],
+            "to": ["reader@example.com"],
+            "subject": "Opened Email"
+        }
+    },
+    "open": {
+        "ipAddress": "198.51.100.1",
+        "timestamp": "2024-01-15T14:30:00.000Z",
+        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)"
+    }
+}
