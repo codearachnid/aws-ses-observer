@@ -1,0 +1,34 @@
+{
+    "eventType": "Bounce",
+    "mail": {
+        "timestamp": "2024-01-15T12:00:00.000Z",
+        "source": "sender@example.com",
+        "sourceArn": "arn:aws:ses:us-east-1:123456789012:identity/example.com",
+        "sendingAccountId": "123456789012",
+        "messageId": "EXAMPLE7c191be45-bounce-trans-4d12-a87d-dd0099a07f8a-000000",
+        "destination": [
+            "full-mailbox@example.com"
+        ],
+        "headersTruncated": false,
+        "commonHeaders": {
+            "from": ["sender@example.com"],
+            "to": ["full-mailbox@example.com"],
+            "subject": "Soft Bounced Email"
+        }
+    },
+    "bounce": {
+        "bounceType": "Transient",
+        "bounceSubType": "MailboxFull",
+        "bouncedRecipients": [
+            {
+                "emailAddress": "full-mailbox@example.com",
+                "action": "failed",
+                "status": "4.2.2",
+                "diagnosticCode": "smtp; 452 4.2.2 Mailbox full"
+            }
+        ],
+        "timestamp": "2024-01-15T12:00:03.000Z",
+        "feedbackId": "0102017b-soft-bounce-feedback",
+        "reportingMTA": "dsn; a]8-31.smtp-out.amazonses.com"
+    }
+}

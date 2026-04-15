@@ -1,0 +1,29 @@
+{
+    "eventType": "Delivery",
+    "mail": {
+        "timestamp": "2024-01-15T12:00:00.000Z",
+        "source": "sender@example.com",
+        "sourceArn": "arn:aws:ses:us-east-1:123456789012:identity/example.com",
+        "sendingAccountId": "123456789012",
+        "messageId": "EXAMPLE7c191be45-e9aedb9a-02f9-4d12-a87d-dd0099a07f8a-000000",
+        "destination": [
+            "recipient@example.com"
+        ],
+        "headersTruncated": false,
+        "commonHeaders": {
+            "from": ["sender@example.com"],
+            "to": ["recipient@example.com"],
+            "subject": "Test Email Subject"
+        }
+    },
+    "delivery": {
+        "timestamp": "2024-01-15T12:00:01.000Z",
+        "processingTimeMillis": 546,
+        "recipients": [
+            "recipient@example.com"
+        ],
+        "smtpResponse": "250 2.6.0 Message received",
+        "remoteMtaIp": "198.51.100.1",
+        "reportingMTA": "a]8-31.smtp-out.amazonses.com"
+    }
+}
