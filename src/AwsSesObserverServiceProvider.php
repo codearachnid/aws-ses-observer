@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace codearachnid\AwsSesObserver;
 
-use codearachnid\AwsSesObserver\Commands\AwsSesObserverCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
